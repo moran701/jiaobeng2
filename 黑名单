@@ -11,7 +11,6 @@ end
 local Blacklist = {
     Users = {
         "ghhvhj567",
-        "nb789178911",
     }
 }
 
