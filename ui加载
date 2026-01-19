@@ -43,7 +43,7 @@ Title2.AnchorPoint = Vector2.new(0.5, 0.55)
 Title2.Position = UDim2.new(0.5, 0, 0.6, 0)
 
 local Title3 = Instance.new('TextLabel', Main)
-Title3.Text = '欢迎使用陌染脚本[BaiMo-Script]'
+Title3.Text = '官方QQ群聊623832234'
 Title3.TextSize = 20
 Title3.BackgroundTransparency = 1
 Title3.TextColor3 = Color3.fromRGB(255, 255, 255)
