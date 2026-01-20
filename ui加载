@@ -40,6 +40,8 @@ local ButtonCorner = Instance.new("UICorner")
 ButtonCorner.CornerRadius = UDim.new(0, 25)
 ButtonCorner.Parent = StartButton
 
+local isCompleted = false
+
 local TweenService = game:GetService("TweenService")
 local fadeInInfo = TweenInfo.new(0.8, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
 local fadeInTween = TweenService:Create(BackgroundFrame, fadeInInfo, {BackgroundTransparency = 0})
@@ -70,6 +72,12 @@ StartButton.MouseButton1Click:Connect(function()
         ScreenGui:Destroy()
         print("脚本已启动并结束")
         task.wait(0.5)
-        return
+        isCompleted = true
     end)
 end)
+
+while not isCompleted do
+    task.wait()
+end
+
+print("UI脚本执行完毕，开始运行后续代码！")
